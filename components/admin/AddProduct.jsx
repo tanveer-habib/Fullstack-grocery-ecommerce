@@ -21,8 +21,8 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // if (!images.image1 && !images.image2 && !images.image3 && !images.image4) return toast.error("1 image is required");
-            // if (!form.name || !form.description || form.price < 1 || form.offerPrice < 1 || !form.category) return toast.error("All fields are required");
+            if (!images.image1 && !images.image2 && !images.image3 && !images.image4) return toast.error("1 image is required");
+            if (!form.name || !form.description || form.price < 1 || form.offerPrice < 1 || !form.category) return toast.error("All fields are required");
 
             setHideButton(true);
             let updatedDescription = form.description.split("\n");

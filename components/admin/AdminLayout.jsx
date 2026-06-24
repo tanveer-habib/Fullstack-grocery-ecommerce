@@ -18,7 +18,8 @@ const AdminLayout = ({ children }) => {
         { text: "Dashboard", link: "/admin", icon: assets.dashboard_icon },
         { text: "Add Product", link: "/admin/add-product", icon: assets.add_icon },
         { text: "Products List", link: "/admin/product-list", icon: assets.product_list_icon },
-        { text: "Orders", link: "/admin/orders", icon: assets.order_icon }
+        { text: "Orders", link: "/admin/orders", icon: assets.order_icon },
+        { text: "Messages", link: "/admin/messages", icon: assets.mail_icon }
     ];
 
     useEffect(() => {

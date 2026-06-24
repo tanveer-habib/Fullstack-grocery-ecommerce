@@ -50,6 +50,7 @@ import barley_image from "./barley_image.png";
 import destroy_icon from "./delete.png";
 import trust from "./trust.png";
 import contact_icon from "./contact_icon.png";
+import mail_icon from "./mail_icon.png";
 
 export const heroImagesArray = [
   potato_image_1,
@@ -88,6 +89,7 @@ export const assets = {
   add_icon,
   product_list_icon,
   order_icon,
+  mail_icon,
   upload_area,
   profile_icon,
   menu_icon,

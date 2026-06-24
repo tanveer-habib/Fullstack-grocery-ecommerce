@@ -29,7 +29,7 @@ const Navbar = () => {
             </Link>
 
             <div className="flex gap-5 items-center">
-                <p className="">Hi <span className="font-bold text-main">Admin!</span></p>
+                <p className="hidden sm:block">Hi <span className="font-bold text-main">Admin!</span></p>
                 <Link href="/" className="px-4 py-0.5 rounded-full cursor-pointer border border-black/50">Home</Link>
                 <button className="px-4 py-0.5 rounded-full cursor-pointer border border-black/50" onClick={handleLogOut}>Log Out</button>
             </div>
