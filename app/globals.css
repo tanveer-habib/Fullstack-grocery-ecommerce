@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #00d52c;
+}
+
+.not-current-tab::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #29e04e;
+  transition: width 0.3s ease-in;
+}
+
+.not-current-tab:hover::after {
+  width: 80%;
+}
+
+.current-tab::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #00d52c;
+  transition: width 0.04s ease-in;
+}
+
+@keyframes slidingX {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+.recharts-wrapper:focus,
+.recharts-surface:focus,
+.recharts-wrapper *:focus {
+  outline: none !important;
+}
