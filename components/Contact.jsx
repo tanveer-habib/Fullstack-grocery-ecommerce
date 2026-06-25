@@ -44,9 +44,10 @@ const Contact = () => {
     return (
         <div>
             <Title text="Context Us" />
+            <p className="max-md:text-center md:ml-5 mb-6 md:max-w-[50vw]">If you ever see a bad UI/UX that can be improve or you have any message for us then do not feel sham or hesitation just message us. We will be very thankfull to you!</p>
 
             <div className="flex flex-col sm:flex-row gap-2">
-                <form className="w-full sm:w-1/2  min-h-[50vh] relative" onSubmit={handleSubmit} >
+                <form className="w-full sm:w-1/2  min-h-[65vh] relative" onSubmit={handleSubmit} >
                     <div className="flex flex-col">
                         <label htmlFor="name">Name</label>
                         <input type="text" placeholder="Your Name" value={form.name} name="name" id="name" className="focus:outline-none border border-main/50 focus:border-main px-2 py-1 rounded-md w-full lg:w-1/2" onChange={(e) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))} required={true} />

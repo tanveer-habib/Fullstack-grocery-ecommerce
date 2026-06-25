@@ -15,7 +15,7 @@ const Navbar = () => {
     const [lastY, setLastY] = useState(0);
     const [navbar, setNavbar] = useState(true);
     const pathname = usePathname();
-    const { countCartItems, user, setUser, setLogInForm, searchText, setSearchText, setCartItems, setAdminForm, isAdmin } = useAppContext();
+    const { countCartItems, user, setUser, setUserOrders, setLogInForm, searchText, setSearchText, setCartItems, setAdminForm, isAdmin } = useAppContext();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,9 +44,10 @@ const Navbar = () => {
                 const data = await res.json();
                 toast.success(data.message);
                 setUser(null);
+                setUserOrders([]);
                 setCartItems({});
             }
-        } catch (err) { }
+        } catch (err) { };
     };
 
     return (

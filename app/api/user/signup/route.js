@@ -11,6 +11,7 @@ export const POST = async (req) => {
             return res.json({ message: "All fields are required" }, { status: 401 });
         };
 
+        await connectDB();
         const userNameExist = await User.findOne({ userName: form.userName });
         if (userNameExist) {
             return res.json({ message: "Username already exist" }, { status: 401 });
@@ -18,7 +19,6 @@ export const POST = async (req) => {
 
         const hashedPassword = await bcrypt.hash(form.password, 10);
 
-        await connectDB();
         const user = await User.create({
             userName: form.userName,
             email: form.email,

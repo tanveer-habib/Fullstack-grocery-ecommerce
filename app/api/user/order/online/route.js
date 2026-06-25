@@ -57,10 +57,10 @@ export const POST = async (req) => {
             mode: "payment",
             metadata: {
                 orderId: order._id.toString(),
+                userId
             },
             success_url: `${origin}/my-orders`,
-            // cancel_url: `${origin}/cart?canceled=true`
-            cancel_url: `${origin}/contact-us?canceled=true`
+            cancel_url: `${origin}/cart`
         });
 
         return res.json({ message: "Order created", url: session.url }, { status: 200 });

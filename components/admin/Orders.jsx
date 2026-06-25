@@ -52,7 +52,7 @@ const Orders = () => {
             <Title text="Orders" />
 
             <div className="w-full h-full overflow-auto pb-16">
-                <table className="min-w-200 lg:ml-4 mr-2">
+                <table className="min-w-200 w-full lg:ml-4 mr-2">
                     <thead className="bg-main/30">
                         <tr>
                             <th className="hidden sm:table-cell w-11 p-1 border border-main text-start">S.No</th>

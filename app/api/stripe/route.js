@@ -1,4 +1,5 @@
 import Order from "@/models/Order.js";
+import User from "@/models/User";
 import { NextResponse as res } from "next/server";
 import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
@@ -15,12 +16,12 @@ export const POST = async (req) => {
             endpointSecret
         );
 
-        let orderId = "";
-
         switch (event.type) {
             case "checkout.session.completed":
-                orderId = event.data.object.metadata?.orderId;
+                const orderId = event.data.object.metadata?.orderId;
+                const userId = event.data.object.metadata?.userId;
                 await Order.findByIdAndUpdate(orderId, { isPaid: true });
+                await User.findByIdAndUpdate(userId, { cartItems: {} });
                 break;
             default:
                 console.log(`Unhandled event type ${event.type}.`);

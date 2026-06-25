@@ -5,26 +5,26 @@ A modern, fully responsive Full Stack Grocery E-Commerce Platform built with Nex
 
 ## 🌐 Live Demo
 
-🔗 Website: https://your-live-url.vercel.app
+🔗 Website: https://fullstack-grocery-ecommerce.vercel.app
 <br/><br/>
 
 ## 📸 Screenshots
 
 ### 👦 Customer Interface
 
-![Hero screenshort](./assets/screenShorts/heroScreenshort.png)
-![Hero screenshort](./assets/screenShorts/heroScreenshort.png)
-![myOrder screenshort ](./assets/screenShorts/myOrdersScreenShort.png)
-![Cart screenshort](./assets/screenShorts/cartScreenshort.png)
+![Hero screenshort](./assets/screenShorts/hero.png)
+![Hero screenshort](./assets/screenShorts/shop.png)
+![Cart screenshort](./assets/screenShorts/cart.png)
+![myOrder screenshort ](./assets/screenShorts/myOrders.png)
 
 ---
 
 ### 👨‍💼 Admin Interface
 
-![image](./assets/screenShorts/dashboardScreenshort.png)
-![image](./assets/screenShorts/dashboardScreenshort.png)
-![image](./assets/screenShorts/addProductScreenshort.png)
-![image](./assets/screenShorts/productListScreenshort.png)
+![Dashboard image](./assets/screenShorts/dashboard.png)
+![Add product image](./assets/screenShorts/addProduct.png)
+![Products list image](./assets/screenShorts/productsList.png)
+![Orders image](./assets/screenShorts/orders.png)
 <br/><br/>
 
 ## ✨ Features
@@ -152,7 +152,7 @@ The website is fully responsive and optimized for:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/tanveer-habib/Fullstack-grocery-ecommerce.git
 ```
 
 ### Navigate into the project

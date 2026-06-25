@@ -7,7 +7,7 @@ const TrustBanner = () => {
     return (
 
         <div className="mt-20">
-            <Title text="Features" />
+            <Title text="Why people trust us" />
 
             <div className="w-full lg:w-3/4 mx-auto flex flex-col sm:flex-row justify-around items-center sm:items-end bg-main/40 rounded-md">
 
